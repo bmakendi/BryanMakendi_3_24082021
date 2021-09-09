@@ -1,0 +1,16 @@
+@use "../utils/mixins" as *;
+
+body {
+    img {
+        max-width: 100%;
+    }
+}
+
+header {
+    @include center;
+    min-height: 5rem;
+    @include box-shadow();
+    &__logo {
+        margin-top: 1rem;
+    }
+}
