@@ -1,0 +1,12 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+.footer {
+    background-color: $footer-bg-color;
+    color: #fff;
+    min-height: 10rem;
+    padding: 1.5rem;
+    a {
+        color: #fff;
+    }
+}

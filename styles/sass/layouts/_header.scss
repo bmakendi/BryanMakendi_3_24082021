@@ -6,11 +6,19 @@ body {
     }
 }
 
-header {
+.header {
     @include center;
-    min-height: 5rem;
+    min-height: 3.96rem;
     @include box-shadow();
+    margin-bottom: 2rem;
     &__logo {
-        margin-top: 1rem;
+        margin-bottom: -0.5rem;
+    }
+    &__return {
+        font-size: 1.3rem;
+        position: absolute;
+        left: 2rem;
+        margin-bottom: -0.5rem;
     }
 }
+
