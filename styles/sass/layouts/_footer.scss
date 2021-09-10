@@ -9,4 +9,20 @@
     a {
         color: #fff;
     }
+    &__title {
+        margin-bottom: 1rem;
+    }
+    &__option {
+        margin-bottom: 0.5rem;
+        &--bold {
+            font-weight: bold;
+        }
+    }
+    &__icon {
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+    .fa-hands-helping {
+        margin-right: 0.1rem;
+    }
 }

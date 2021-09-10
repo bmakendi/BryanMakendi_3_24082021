@@ -231,5 +231,21 @@ body img {
 .footer a {
   color: #fff;
 }
+.footer__title {
+  margin-bottom: 1rem;
+}
+.footer__option {
+  margin-bottom: 0.5rem;
+}
+.footer__option--bold {
+  font-weight: bold;
+}
+.footer__icon {
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+.footer .fa-hands-helping {
+  margin-right: 0.1rem;
+}
 
 /*# sourceMappingURL=style.css.map */
