@@ -4,8 +4,8 @@
     align-items: center;    
 }
 
-@mixin box-shadow($value: 5px) {
-    box-shadow: 0 1px $value rgba(0, 0, 0, 0.2);
+@mixin box-shadow($value: 5px, $offset-y: 5px) {
+    box-shadow: 0 $offset-y $value rgba(0, 0, 0, 0.2);
 }
 
 @mixin color-gradient($color1, $color2) {

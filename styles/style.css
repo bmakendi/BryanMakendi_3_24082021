@@ -52,7 +52,7 @@ body img {
 
 .searchbar {
   background-color: #EAEAEA;
-  min-height: 2.9rem;
+  min-height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,7 @@ body img {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   min-height: 10rem;
   padding: 2rem 4rem;
   font-size: 1.1rem;
@@ -96,9 +96,70 @@ body img {
   padding: 1rem;
   border-radius: 50px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 1rem;
   font-weight: 500;
+}
+
+.how-to {
+  position: relative;
+  padding: 2.5rem 1.5rem;
+  display: grid;
+  grid-template-areas: "title" "restau" "menu" "eat";
+}
+.how-to__title {
+  grid-area: title;
+  margin-bottom: 1.5rem;
+  font-size: 1.65rem;
+}
+.how-to opt1 {
+  grid-area: restau;
+}
+.how-to opt2 {
+  grid-area: menu;
+}
+.how-to opt3 {
+  grid-area: eat;
+}
+.how-to__option {
+  display: flex;
+  align-items: center;
+  padding: 1.8rem 1rem;
+  background-color: #F6F6F6;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin-left: 0.85rem;
+}
+.how-to__text {
+  font-weight: bold;
+  margin-left: 1.3rem;
+}
+.how-to__icon {
+  color: #7e7e7e;
+  font-size: 1.2rem;
+  margin-left: 1.3rem;
+}
+.how-to__number {
+  color: #fff;
+  position: absolute;
+  background-color: #9356DC;
+  left: 1.5rem;
+  width: 1.5rem;
+  min-height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 0.85rem;
+}
+
+.restau {
+  padding: 2.5rem 1.5rem;
+  background-color: #F6F6F6;
+}
+.restau__title {
+  font-size: 1.65rem;
 }
 
 .footer {

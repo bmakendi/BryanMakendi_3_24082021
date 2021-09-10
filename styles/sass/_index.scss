@@ -3,7 +3,7 @@
 
 .searchbar {
     background-color: $form-bg-color;
-    min-height: 2.9rem;
+    min-height: 3rem;
     @include center;
     padding-left: 2.5rem;
     &__input {
@@ -23,7 +23,7 @@
 .explore {
     background-color: $light-grey;
     @include center;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     min-height: 10rem;
     padding: 2rem 4rem;
     font-size: 1.10rem;
@@ -45,5 +45,69 @@
         @include box-shadow(10px);
         font-size: 1rem;
         font-weight: 500;
+    }
+}
+
+.how-to {
+    position: relative;
+    padding: 2.5rem 1.5rem;
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "restau"
+        "menu"
+        "eat";
+    &__title {
+        grid-area: title;
+        margin-bottom: 1.5rem;
+        font-size: $h2-font-size;
+    }
+    opt1 {
+        grid-area: restau;
+    }
+    opt2 {
+        grid-area: menu;
+    }
+    opt3 {
+        grid-area: eat;
+    }
+    &__option {
+        display: flex;
+        align-items: center;
+        padding: 1.8rem 1rem;
+        background-color: $light-grey;
+        margin-bottom: 1.5rem;
+        @include box-shadow(15px);
+        border-radius: 25px;
+        margin-left: 0.85rem;
+    }
+    &__text {
+        font-weight: bold;
+        margin-left: 1.3rem;
+    }
+    &__icon {
+        color: #7e7e7e;
+        font-size: 1.2rem;
+        margin-left: 1.3rem;
+    }
+    &__number {
+        color: #fff;
+        position: absolute;
+        background-color: $color-primary;
+        left: 1.5rem;
+        width: 1.5rem;
+        min-height: 1.5rem;
+        @include center;
+        border-radius: 100%;
+        font-size: 0.85rem;
+    }
+}
+
+.restau {
+    padding: 2.5rem 1.5rem;
+    background-color: $light-grey;
+    &__title {
+        font-size: $h2-font-size;
+        
     }
 }

@@ -9,7 +9,7 @@ body {
 .header {
     @include center;
     min-height: 3.96rem;
-    @include box-shadow();
+    @include box-shadow(5px, 1px);
     position: relative;
     &__logo {
         margin-bottom: -0.5rem;
