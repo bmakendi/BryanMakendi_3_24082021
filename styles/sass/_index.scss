@@ -12,9 +12,38 @@
         font-size: 1rem;
         color: #353535;
         font-weight: 700;
-        padding-left: 0.5rem;
+        margin-left: 1rem;
     }
     &__icon {
         color: #353535;
+        margin-left: 1rem;
+    }
+}
+
+.explore {
+    background-color: $light-grey;
+    @include center;
+    flex-wrap: wrap;
+    min-height: 10rem;
+    padding: 2rem 4rem;
+    font-size: 1.10rem;
+    text-align: center;
+    &__title {
+        margin-bottom: 0.8rem;
+    }
+    &__sub {
+        font-weight: 300;
+        color: #535353;
+        margin-bottom: 2rem;
+    }
+    &__btn {
+        color: #fff;
+        @include color-gradient($color-secondary, $color-primary);
+        padding: 1rem;
+        border-radius: 50px;
+        margin-bottom: 1.5rem;
+        @include box-shadow(10px);
+        font-size: 1rem;
+        font-weight: 500;
     }
 }
