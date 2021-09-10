@@ -1,0 +1,20 @@
+@use "utils/mixins" as *;
+@use "utils/variables" as *;
+
+.searchbar {
+    background-color: $form-bg-color;
+    min-height: 2.9rem;
+    @include center;
+    padding-left: 2.5rem;
+    &__input {
+        border: none;
+        background-color: $form-bg-color;
+        font-size: 1rem;
+        color: #353535;
+        font-weight: 700;
+        padding-left: 0.5rem;
+    }
+    &__icon {
+        color: #353535;
+    }
+}
