@@ -157,9 +157,69 @@ body img {
 .restau {
   padding: 2.5rem 1.5rem;
   background-color: #F6F6F6;
+  display: grid;
+  grid-template-areas: "title" "restau1" "restau2" "restau3" "restau4";
 }
 .restau__title {
   font-size: 1.65rem;
+  margin-bottom: 1.5rem;
+}
+.restau1 {
+  grid-area: restau1;
+}
+.restau2 {
+  grid-area: restau2;
+}
+.restau3 {
+  grid-area: restau3;
+}
+.restau4 {
+  grid-area: restau4;
+}
+.restau__card {
+  position: relative;
+  box-shadow: 0 0.5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  height: 15rem;
+  margin-bottom: 1.5rem;
+}
+.restau__new {
+  position: absolute;
+  background-color: #99E2D0;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 3px;
+  color: #2c9c81;
+  font-weight: 500;
+  padding: 0.45rem 0.55rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.restau__name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+.restau__location {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-left: 1rem;
+}
+.restau__heart {
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.5rem;
+}
+.restau figure {
+  height: 70%;
+  margin-bottom: 2.2rem;
+}
+.restau img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 0.5rem;
 }
 
 .footer {

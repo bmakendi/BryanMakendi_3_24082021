@@ -106,8 +106,72 @@
 .restau {
     padding: 2.5rem 1.5rem;
     background-color: $light-grey;
+    display: grid;
+    grid-template-areas: 
+        "title"
+        "restau1"
+        "restau2"
+        "restau3"
+        "restau4";
     &__title {
         font-size: $h2-font-size;
-        
+        margin-bottom: 1.5rem;
+    }
+    &1 {
+        grid-area: restau1;
+    }
+    &2 {
+        grid-area: restau2;
+    }
+    &3 {
+        grid-area: restau3;
+    }
+    &4 {
+        grid-area: restau4;
+    }
+    &__card {
+        position: relative;
+        @include box-shadow(15px, 0.5px);
+        border-radius: 20px;
+        height: 15rem;
+        margin-bottom: 1.5rem;
+    }
+    &__new {
+        position: absolute;
+        background-color: $color-tertiary;
+        top: 1rem;
+        right: 1rem;
+        border-radius: 3px;
+        color: darken($color: $color-tertiary, $amount: 35%);
+        font-weight: 500;
+        padding: 0.45rem 0.55rem;
+        @include box-shadow();
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-left: 1rem;
+    }
+    &__location {
+        font-size: 1.1rem;
+        font-weight: 300;
+        margin-left: 1rem;
+    }
+    &__heart {
+        position: absolute;
+        right: 1.5rem;
+        font-size: 1.5rem;
+    }
+    figure {
+        height: 70%;
+        margin-bottom: 2.2rem;
+    }
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: 0.5rem;
     }
 }
