@@ -83,6 +83,7 @@
         border-radius: 25px;
         margin-left: 0.85rem;
         color: #7e7e7e;
+        transition: background-color 0.3s, color 0.5s;
         &:hover {
             background-color: #F5EDFF;
             color: $color-primary;
