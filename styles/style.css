@@ -326,6 +326,11 @@ body img {
 
 /* CHECKOUT BUTTON */
 .checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout__btn {
   color: #fff;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   padding: 1rem;
@@ -333,12 +338,8 @@ body img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 1rem;
   font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 7rem 4rem;
 }
-.checkout:hover {
+.checkout__btn:hover {
   background: linear-gradient(to bottom right, #ff8de0, #9e67e0);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }

@@ -92,10 +92,11 @@
 
 /* CHECKOUT BUTTON */
 .checkout {
-    @include btn-appearance($color-secondary, $color-primary);
     @include center;
-    margin: 0 7rem 4rem;
-    &:hover {
-        @include btn-lighten($color-secondary, $color-primary);
+    &__btn {
+        @include btn-appearance($color-secondary, $color-primary);
+        &:hover {
+            @include btn-lighten($color-secondary, $color-primary);
+        }
     }
 }
