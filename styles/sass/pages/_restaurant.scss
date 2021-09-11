@@ -1,0 +1,101 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+/* BANNER */
+.banner {
+    max-width: 100%;
+}
+
+/* MAIN SECTION */
+.main-restau {
+    position: relative;
+    background-color: $light-grey;
+    padding: 2rem 1rem;
+    margin-top: -3.8rem;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+/* HEADING */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    &__title {
+        font-weight: lighter;
+        font-size: 1.9rem;
+    }
+    &__heart {
+        font-size: 1.7rem;
+    }
+}
+
+/* MENU */
+.menu {
+    margin-bottom: 3rem;
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+        "starters"
+        "dishes"
+        "desserts";
+    &__starters {
+        grid-area: starters;
+    }
+    &__dishes {
+        grid-area: dishes;
+    }
+    &__desserts {
+        grid-area: desserts;
+    }
+    &__title {
+        max-width: 2.7rem;
+        padding-bottom: 0.2rem;
+        margin-top: 1rem;
+        font-weight: lighter;
+        font-size: 1.08rem;
+        text-transform: uppercase;
+        border-bottom: 3px solid $color-tertiary;
+    }
+    &__card {
+        display: flex;
+        background-color: #fff;
+        padding: 0.8rem;
+        margin-top: 1rem;
+        border-radius: 15px;
+        @include box-shadow(10px, 0);
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        display: none;
+    }
+    &__sub-title {
+        font-weight: 500;
+        margin-bottom: 0.3rem;
+    }
+    &__sub-text {
+        font-weight: 100;
+    }
+    &__price {
+        align-self: flex-end;
+        font-size: 0.9rem;
+        font-weight: 500;
+        position: absolute;
+        right: 0.8rem;
+    }
+}
+
+/* CHECKOUT BUTTON */
+.checkout {
+    @include btn-appearance($color-secondary, $color-primary);
+    @include center;
+    margin: 0 7rem 4rem;
+    &:hover {
+        @include btn-lighten($color-secondary, $color-primary);
+    }
+}

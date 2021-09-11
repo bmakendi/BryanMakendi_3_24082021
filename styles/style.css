@@ -223,7 +223,7 @@ body img {
 .restau__heart {
   position: absolute;
   right: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .restau figure {
   height: 70%;
@@ -236,6 +236,111 @@ body img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   margin-bottom: 0.5rem;
+}
+
+/* BANNER */
+.banner {
+  max-width: 100%;
+}
+
+/* MAIN SECTION */
+.main-restau {
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 2rem 1rem;
+  margin-top: -3.8rem;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+/* HEADING */
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+.heading__title {
+  font-weight: lighter;
+  font-size: 1.9rem;
+}
+.heading__heart {
+  font-size: 1.7rem;
+}
+
+/* MENU */
+.menu {
+  margin-bottom: 3rem;
+  position: relative;
+  display: grid;
+  grid-template-areas: "starters" "dishes" "desserts";
+}
+.menu__starters {
+  grid-area: starters;
+}
+.menu__dishes {
+  grid-area: dishes;
+}
+.menu__desserts {
+  grid-area: desserts;
+}
+.menu__title {
+  max-width: 2.7rem;
+  padding-bottom: 0.2rem;
+  margin-top: 1rem;
+  font-weight: lighter;
+  font-size: 1.08rem;
+  text-transform: uppercase;
+  border-bottom: 3px solid #99e2d0;
+}
+.menu__card {
+  display: flex;
+  background-color: #fff;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.menu__description {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__icon {
+  display: none;
+}
+.menu__sub-title {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+.menu__sub-text {
+  font-weight: 100;
+}
+.menu__price {
+  align-self: flex-end;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: absolute;
+  right: 0.8rem;
+}
+
+/* CHECKOUT BUTTON */
+.checkout {
+  color: #fff;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  padding: 1rem;
+  border-radius: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7rem 4rem;
+}
+.checkout:hover {
+  background: linear-gradient(to bottom right, #ff8de0, #9e67e0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
