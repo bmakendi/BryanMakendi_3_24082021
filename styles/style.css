@@ -139,16 +139,18 @@ body img {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   margin-left: 0.85rem;
+  color: #7e7e7e;
 }
 .how-to__option:hover {
   background-color: #F5EDFF;
+  color: #9356dc;
 }
 .how-to__text {
+  color: black;
   font-weight: bold;
   margin-left: 1.3rem;
 }
 .how-to__icon {
-  color: #7e7e7e;
   font-size: 1.2rem;
   margin-left: 1.3rem;
 }
@@ -202,8 +204,9 @@ body img {
   top: 1rem;
   right: 1rem;
   border-radius: 3px;
-  color: #2c9c81;
+  color: #299077;
   font-weight: 500;
+  font-size: 0.9rem;
   padding: 0.45rem 0.55rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -259,6 +262,9 @@ body img {
 }
 .footer .fa-hands-helping {
   margin-right: 0.1rem;
+}
+.footer__text:hover {
+  border-bottom: 1px solid #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

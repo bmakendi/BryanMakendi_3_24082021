@@ -80,16 +80,18 @@
         @include box-shadow(15px);
         border-radius: 25px;
         margin-left: 0.85rem;
+        color: #7e7e7e;
         &:hover {
             background-color: #F5EDFF;
+            color: $color-primary;
         }
     }
     &__text {
+        color: rgb(0, 0, 0);
         font-weight: bold;
         margin-left: 1.3rem;
     }
     &__icon {
-        color: #7e7e7e;
         font-size: 1.2rem;
         margin-left: 1.3rem;
     }
@@ -146,8 +148,9 @@
         top: 1rem;
         right: 1rem;
         border-radius: 3px;
-        color: darken($color: $color-tertiary, $amount: 35%);
+        color: darken($color: $color-tertiary, $amount: 38%);
         font-weight: 500;
+        font-size: 0.9rem;
         padding: 0.45rem 0.55rem;
         @include box-shadow();
     }

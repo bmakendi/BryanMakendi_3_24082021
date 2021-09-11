@@ -8,6 +8,7 @@
     padding: 1.5rem;
     a {
         color: #fff;
+
     }
     &__title {
         margin-bottom: 1rem;
@@ -24,5 +25,8 @@
     }
     .fa-hands-helping {
         margin-right: 0.1rem;
+    }
+    &__text:hover {
+        border-bottom: 1px solid #fff;
     }
 }
