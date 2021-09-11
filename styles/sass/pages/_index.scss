@@ -1,6 +1,7 @@
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
 
+/* SEARCHBAR */
 .searchbar {
     background-color: $form-bg-color;
     min-height: 3rem;
@@ -20,13 +21,14 @@
     }
 }
 
+/* EXPLORE SECTION */
 .explore {
     background-color: $light-grey;
     @include center;
     flex-flow: column wrap;
     min-height: 10rem;
     padding: 2rem 4rem;
-    font-size: 1.10rem;
+    font-size: 1.1rem;
     text-align: center;
     &__title {
         margin-bottom: 0.8rem;
@@ -37,22 +39,20 @@
         margin-bottom: 2rem;
     }
     &__btn {
-        color: #fff;
-        @include color-gradient($color-secondary, $color-primary);
-        padding: 1rem;
-        border-radius: 50px;
+        @include btn-appearance($color-secondary, $color-primary);
         margin-bottom: 1.5rem;
-        @include box-shadow(10px);
-        font-size: 1rem;
-        font-weight: 500;
+        &:hover {
+            @include btn-lighten($color-secondary, $color-primary);
+        }
     }
 }
 
+/* HOW TO USE */
 .how-to {
     position: relative;
     padding: 2.5rem 1.5rem;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "title"
         "restau"
         "menu"
@@ -80,6 +80,9 @@
         @include box-shadow(15px);
         border-radius: 25px;
         margin-left: 0.85rem;
+        &:hover {
+            background-color: #F5EDFF;
+        }
     }
     &__text {
         font-weight: bold;
@@ -103,11 +106,12 @@
     }
 }
 
+/* RESTAURANT CARDS */
 .restau {
     padding: 2.5rem 1.5rem;
     background-color: $light-grey;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "title"
         "restau1"
         "restau2"

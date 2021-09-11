@@ -1,7 +1,7 @@
 @mixin center {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 @mixin box-shadow($value: 5px, $offset-y: 5px) {
@@ -10,4 +10,19 @@
 
 @mixin color-gradient($color1, $color2) {
     background: linear-gradient(to bottom right, $color1, $color2);
+}
+
+@mixin btn-appearance($color1, $color2) {
+    color: #fff;
+    @include color-gradient($color1, $color2);
+    padding: 1rem;
+    border-radius: 50px;
+    @include box-shadow(10px);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@mixin btn-lighten($color1, $color2) {
+    @include color-gradient(lighten($color1, 4%), lighten($color2, 4%));
+    @include box-shadow(15px);
 }

@@ -7,7 +7,8 @@
   scroll-behavior: smooth;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -24,7 +25,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.heading__title, .footer__title {
+.heading__title,
+.footer__title {
   font-family: "Shrikhand", cursive;
 }
 
@@ -50,8 +52,9 @@ body img {
   margin-bottom: -0.5rem;
 }
 
+/* SEARCHBAR */
 .searchbar {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   min-height: 3rem;
   display: flex;
   justify-content: center;
@@ -60,7 +63,7 @@ body img {
 }
 .searchbar__input {
   border: none;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   font-size: 1rem;
   color: #353535;
   font-weight: 700;
@@ -71,8 +74,9 @@ body img {
   margin-left: 1rem;
 }
 
+/* EXPLORE SECTION */
 .explore {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,15 +96,20 @@ body img {
 }
 .explore__btn {
   color: #fff;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   padding: 1rem;
   border-radius: 50px;
-  margin-bottom: 1.5rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 1rem;
   font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.explore__btn:hover {
+  background: linear-gradient(to bottom right, #ff8de0, #9e67e0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* HOW TO USE */
 .how-to {
   position: relative;
   padding: 2.5rem 1.5rem;
@@ -125,11 +134,14 @@ body img {
   display: flex;
   align-items: center;
   padding: 1.8rem 1rem;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   margin-bottom: 1.5rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   margin-left: 0.85rem;
+}
+.how-to__option:hover {
+  background-color: #F5EDFF;
 }
 .how-to__text {
   font-weight: bold;
@@ -143,7 +155,7 @@ body img {
 .how-to__number {
   color: #fff;
   position: absolute;
-  background-color: #9356DC;
+  background-color: #9356dc;
   left: 1.5rem;
   width: 1.5rem;
   min-height: 1.5rem;
@@ -154,9 +166,10 @@ body img {
   font-size: 0.85rem;
 }
 
+/* RESTAURANT CARDS */
 .restau {
   padding: 2.5rem 1.5rem;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: grid;
   grid-template-areas: "title" "restau1" "restau2" "restau3" "restau4";
 }
@@ -185,7 +198,7 @@ body img {
 }
 .restau__new {
   position: absolute;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   top: 1rem;
   right: 1rem;
   border-radius: 3px;
