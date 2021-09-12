@@ -77,6 +77,12 @@
         border-radius: 15px;
         @include box-shadow(10px, 0);
         overflow: hidden;
+        &:hover > .menu__icon {
+            margin-right: -0.8rem;
+        }
+        &:hover i {
+            transform: rotate(-1turn);
+        }
     }
     &__description {
         max-width: 100%;
@@ -88,6 +94,10 @@
         @include center;
         margin: -0.8rem -4.6rem -0.8rem 0;
         width: 3.7rem;
+        transition: all 0.33s ease-in-out;
+        i {
+            transition: all 0.405s ease-in-out;
+        }
     }
     &__icon-wrapper {
         background-color: #fff;
@@ -96,6 +106,7 @@
         width: 1.4rem;
         height: 1.4rem;
         @include center;
+        
     }
     &__sub-title {
         font-weight: 500;
@@ -123,5 +134,9 @@
     @include center;
     &__btn {
         @include btn-appearance($color-secondary, $color-primary, 2.5rem);
+        transition: opacity 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+        &:hover {
+            @include btn-lighten;
+        }
     }
 }

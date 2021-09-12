@@ -43,8 +43,9 @@
     &__btn {
         @include btn-appearance($color-secondary, $color-primary);
         margin-bottom: 1.5rem;
+        transition: opacity 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
         &:hover {
-            @include btn-lighten($color-secondary, $color-primary);
+            @include btn-lighten();
         }
     }
 }
@@ -83,7 +84,7 @@
         border-radius: 25px;
         margin-left: 0.85rem;
         color: #7e7e7e;
-        transition: background-color 0.3s, color 0.5s;
+        transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
         &:hover {
             background-color: #F5EDFF;
             color: $color-primary;

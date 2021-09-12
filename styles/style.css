@@ -106,10 +106,11 @@ body img {
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
+  transition: opacity 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 .explore__btn:hover {
-  background: linear-gradient(to bottom right, #ff8de0, #9e67e0);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0.88;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* HOW TO USE */
@@ -143,7 +144,7 @@ body img {
   border-radius: 25px;
   margin-left: 0.85rem;
   color: #7e7e7e;
-  transition: background-color 0.3s, color 0.5s;
+  transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
 }
 .how-to__option:hover {
   background-color: #F5EDFF;
@@ -317,6 +318,12 @@ body img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
+.menu__card:hover > .menu__icon {
+  margin-right: -0.8rem;
+}
+.menu__card:hover i {
+  transform: rotate(-1turn);
+}
 .menu__description {
   max-width: 100%;
   flex: 1;
@@ -329,6 +336,10 @@ body img {
   align-items: center;
   margin: -0.8rem -4.6rem -0.8rem 0;
   width: 3.7rem;
+  transition: all 0.33s ease-in-out;
+}
+.menu__icon i {
+  transition: all 0.405s ease-in-out;
 }
 .menu__icon-wrapper {
   background-color: #fff;
@@ -374,6 +385,11 @@ body img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 1rem;
   font-weight: 500;
+  transition: opacity 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+.checkout__btn:hover {
+  opacity: 0.88;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .footer {

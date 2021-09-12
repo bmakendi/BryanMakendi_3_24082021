@@ -22,7 +22,7 @@
     font-weight: 500;
 }
 
-@mixin btn-lighten($color1, $color2) {
-    @include color-gradient(lighten($color1, 4%), lighten($color2, 4%));
-    @include box-shadow(15px);
+@mixin btn-lighten() {
+    opacity: 0.88;
+    @include box-shadow(20px);
 }
