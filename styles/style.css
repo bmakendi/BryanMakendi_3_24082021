@@ -99,7 +99,7 @@ body img {
 .explore__btn {
   color: #fff;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  padding: 1rem;
+  padding: 1rem 1rem;
   border-radius: 50px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 1rem;
@@ -245,6 +245,11 @@ body img {
 .banner {
   max-width: 100%;
 }
+.banner img {
+  object-fit: cover;
+  max-height: 30rem;
+  width: 100%;
+}
 
 /* MAIN SECTION */
 .main-restau {
@@ -254,6 +259,10 @@ body img {
   margin-top: -3.8rem;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
+}
+
+.main-note-enchantee {
+  margin-top: -15rem;
 }
 
 /* HEADING */
@@ -336,15 +345,11 @@ body img {
 .checkout__btn {
   color: #fff;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  padding: 1rem;
+  padding: 1rem 2.5rem;
   border-radius: 50px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-size: 1rem;
   font-weight: 500;
-}
-.checkout__btn:hover {
-  background: linear-gradient(to bottom right, #ff8de0, #9e67e0);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
@@ -358,6 +363,7 @@ body img {
 }
 .footer__title {
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 .footer__option {
   margin-bottom: 0.5rem;

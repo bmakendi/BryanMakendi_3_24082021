@@ -12,10 +12,10 @@
     background: linear-gradient(to bottom right, $color1, $color2);
 }
 
-@mixin btn-appearance($color1, $color2) {
+@mixin btn-appearance($color1, $color2, $padding-side: 1rem) {
     color: #fff;
     @include color-gradient($color1, $color2);
-    padding: 1rem;
+    padding: 1rem $padding-side;
     border-radius: 50px;
     @include box-shadow(10px);
     font-size: 1rem;

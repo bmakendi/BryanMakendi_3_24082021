@@ -4,6 +4,11 @@
 /* BANNER */
 .banner {
     max-width: 100%;
+    img {
+        object-fit: cover;
+        max-height: 30rem;
+        width: 100%;
+    }
 }
 
 /* MAIN SECTION */
@@ -14,6 +19,10 @@
     margin-top: -3.8rem;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
+}
+
+.main-note-enchantee {
+    margin-top: -15rem;
 }
 
 /* HEADING */
@@ -94,9 +103,6 @@
 .checkout {
     @include center;
     &__btn {
-        @include btn-appearance($color-secondary, $color-primary);
-        &:hover {
-            @include btn-lighten($color-secondary, $color-primary);
-        }
+        @include btn-appearance($color-secondary, $color-primary, 2.5rem);
     }
 }
