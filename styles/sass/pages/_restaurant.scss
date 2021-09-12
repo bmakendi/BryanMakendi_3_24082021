@@ -70,32 +70,51 @@
     }
     &__card {
         display: flex;
+        max-width: 100%;
         background-color: #fff;
         padding: 0.8rem;
         margin-top: 1rem;
         border-radius: 15px;
         @include box-shadow(10px, 0);
+        overflow: hidden;
     }
     &__description {
-        display: flex;
-        justify-content: space-between;
+        max-width: 100%;
+        flex: 1;
+        width: 100%;
     }
     &__icon {
-        display: none;
+        background-color: $color-tertiary;
+        @include center;
+        margin: -0.8rem -4.6rem -0.8rem 0;
+        width: 3.7rem;
+    }
+    &__icon-wrapper {
+        background-color: #fff;
+        color: $color-tertiary;
+        border-radius: 100%;
+        width: 1.4rem;
+        height: 1.4rem;
+        @include center;
     }
     &__sub-title {
         font-weight: 500;
         margin-bottom: 0.3rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     &__sub-text {
         font-weight: 100;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     &__price {
         align-self: flex-end;
         font-size: 0.9rem;
         font-weight: 500;
-        position: absolute;
-        right: 0.8rem;
+        margin-right: 0.8rem;
     }
 }
 

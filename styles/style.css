@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  min-width: 0;
 }
 
 ul,
@@ -308,32 +309,55 @@ body img {
 }
 .menu__card {
   display: flex;
+  max-width: 100%;
   background-color: #fff;
   padding: 0.8rem;
   margin-top: 1rem;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 .menu__description {
-  display: flex;
-  justify-content: space-between;
+  max-width: 100%;
+  flex: 1;
+  width: 100%;
 }
 .menu__icon {
-  display: none;
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -0.8rem -4.6rem -0.8rem 0;
+  width: 3.7rem;
+}
+.menu__icon-wrapper {
+  background-color: #fff;
+  color: #99e2d0;
+  border-radius: 100%;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu__sub-title {
   font-weight: 500;
   margin-bottom: 0.3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu__sub-text {
   font-weight: 100;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu__price {
   align-self: flex-end;
   font-size: 0.9rem;
   font-weight: 500;
-  position: absolute;
-  right: 0.8rem;
+  margin-right: 0.8rem;
 }
 
 /* CHECKOUT BUTTON */
