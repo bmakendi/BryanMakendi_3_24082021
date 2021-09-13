@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 @mixin center {
     display: flex;
     justify-content: center;
@@ -8,8 +10,8 @@
     box-shadow: 0 $offset-y $value rgba(0, 0, 0, 0.2);
 }
 
-@mixin color-gradient($color1, $color2) {
-    background: linear-gradient(to bottom right, $color1, $color2);
+@mixin color-gradient($color1, $color2, $direction: to bottom right) {
+    background: linear-gradient($direction, $color1, $color2);
 }
 
 @mixin btn-appearance($color1, $color2, $padding-side: 1rem) {
@@ -25,4 +27,12 @@
 @mixin btn-lighten() {
     opacity: 0.88;
     @include box-shadow(20px);
+}
+
+@mixin heart-anim() {
+    @include color-gradient($color-secondary, $color-primary, to top right);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
 }

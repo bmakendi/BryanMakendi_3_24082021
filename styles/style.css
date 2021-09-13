@@ -225,10 +225,23 @@ body img {
   font-weight: 300;
   margin-left: 1rem;
 }
-.restau__heart {
+.restau__heart:hover > * {
+  background: linear-gradient(to top right, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+}
+.restau__heart > * {
   position: absolute;
   right: 1.5rem;
+  bottom: 2rem;
   font-size: 1.7rem;
+  transition: opacity 0.4s ease-in-out;
+}
+.restau__heart--full {
+  color: #f6f6f6;
+  opacity: 0;
 }
 .restau figure {
   height: 70%;
@@ -269,6 +282,7 @@ body img {
 
 /* HEADING */
 .heading {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -278,9 +292,28 @@ body img {
 .heading__title {
   font-weight: lighter;
   font-size: 1.9rem;
+  margin-right: 1rem;
 }
 .heading__heart {
   font-size: 1.7rem;
+  margin-left: 1rem;
+}
+.heading__heart:hover > * {
+  background: linear-gradient(to top right, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+}
+.heading__heart > * {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+  transition: opacity 0.4s ease-in-out;
+}
+.heading__heart--full {
+  color: #f6f6f6;
+  opacity: 0;
 }
 
 /* MENU */

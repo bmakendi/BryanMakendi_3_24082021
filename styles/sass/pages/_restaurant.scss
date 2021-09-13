@@ -27,6 +27,7 @@
 
 /* HEADING */
 .heading {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,10 +36,26 @@
     &__title {
         font-weight: lighter;
         font-size: 1.9rem;
+        margin-right: 1rem;
     }
     &__heart {
         font-size: 1.7rem;
+        margin-left: 1rem;
+        &:hover > *{
+            @include heart-anim();
+        }
+        & > * {
+            position: absolute;
+            right: 1rem;
+            bottom: 0.5rem;
+            transition: opacity 0.4s ease-in-out;
+        }
+        &--full {
+            color:$light-grey;
+            opacity: 0;
+        }
     }
+    
 }
 
 /* MENU */

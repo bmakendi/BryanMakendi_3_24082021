@@ -169,9 +169,20 @@
         margin-left: 1rem;
     }
     &__heart {
-        position: absolute;
-        right: 1.5rem;
-        font-size: 1.7rem;
+        &:hover > *{
+            @include heart-anim();
+        }
+        & > * {
+            position: absolute;
+            right: 1.5rem;
+            bottom: 2rem;
+            font-size: 1.7rem;
+            transition: opacity 0.4s ease-in-out;
+        }
+        &--full {
+            color:$light-grey;
+            opacity: 0;
+        }
     }
     figure {
         height: 70%;
