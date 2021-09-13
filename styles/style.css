@@ -46,11 +46,92 @@ body img {
 .header__logo {
   margin-bottom: -0.5rem;
 }
+.header__anim {
+  z-index: 2;
+  position: relative;
+  animation: loading-title 1.7s 0.3s both;
+}
 .header__return {
   font-size: 1.3rem;
   position: absolute;
   left: 2rem;
   margin-bottom: -0.5rem;
+}
+
+@keyframes appearing-menu {
+  from {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes loading {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+    z-index: -1;
+  }
+}
+@keyframes loading-page {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  95% {
+    opacity: 0.4;
+  }
+  97% {
+    opacity: 0.2;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes loading-title {
+  0% {
+    transform: translateY(20rem);
+  }
+  99% {
+    z-index: 2;
+  }
+  100% {
+    transform: translateY(0);
+    z-index: 0;
+  }
+}
+/* LOADING SPINNER */
+.loading {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  animation: loading-page 2s both;
+}
+.loading i {
+  font-size: 5rem;
+  background: linear-gradient(to right, #99e2d0, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: loading 2s forwards ease-in-out;
 }
 
 /* SEARCHBAR */
@@ -325,12 +406,15 @@ body img {
 }
 .menu__starters {
   grid-area: starters;
+  animation: appearing-menu 0.5s both 0.1s;
 }
 .menu__dishes {
   grid-area: dishes;
+  animation: appearing-menu 0.5s both 0.3s;
 }
 .menu__desserts {
   grid-area: desserts;
+  animation: appearing-menu 0.5s both 0.5s;
 }
 .menu__title {
   max-width: 2.7rem;

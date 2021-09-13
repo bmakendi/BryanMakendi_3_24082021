@@ -1,5 +1,6 @@
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
+@use "../utils/animations" as *;
 
 /* BANNER */
 .banner {
@@ -69,12 +70,15 @@
         "desserts";
     &__starters {
         grid-area: starters;
+        animation: appearing-menu 0.5s both 0.1s;
     }
     &__dishes {
         grid-area: dishes;
+        animation: appearing-menu 0.5s both 0.3s;
     }
     &__desserts {
         grid-area: desserts;
+        animation: appearing-menu 0.5s both 0.5s;
     }
     &__title {
         max-width: 2.7rem;

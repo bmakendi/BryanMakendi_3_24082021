@@ -1,0 +1,57 @@
+@keyframes appearing-menu {
+    from {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(360deg);
+        z-index: -1;
+    }
+}
+
+@keyframes loading-page {
+    0% {
+        opacity: 1;
+        z-index: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    95% {
+        opacity: 0.4;
+    }
+    97% {
+        opacity: 0.2;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes loading-title {
+    0% {
+        transform: translateY(20rem);
+    }
+    99% {
+        z-index: 2;
+    }
+    100% {
+        transform: translateY(0);
+        z-index: 0;
+    }
+}

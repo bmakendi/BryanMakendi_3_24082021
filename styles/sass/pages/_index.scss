@@ -1,5 +1,26 @@
 @use "../utils/mixins" as *;
 @use "../utils/variables" as *;
+@use "../utils/animations" as *;
+
+/* LOADING SPINNER */
+.loading {
+    position: fixed;
+    right: 0;
+    left:0;
+    top: 0;
+    bottom: 0;
+    @include center;
+    background-color: $light-grey;
+    animation: loading-page 2s both;
+    i {
+        font-size: 5rem;
+        @include color-gradient($color-tertiary, $color-secondary, to right);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: loading 2s forwards ease-in-out;
+    }
+}
 
 /* SEARCHBAR */
 .searchbar {

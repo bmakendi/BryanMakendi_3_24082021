@@ -14,6 +14,11 @@ body {
     &__logo {
         margin-bottom: -0.5rem;
     }
+    &__anim {
+        z-index: 2;
+        position: relative;
+        animation: loading-title 1.7s 0.3s both;
+    }
     &__return {
         font-size: 1.3rem;
         position: absolute;
