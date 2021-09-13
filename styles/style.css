@@ -209,7 +209,7 @@ body img {
   top: 1rem;
   right: 1rem;
   border-radius: 3px;
-  color: #299077;
+  color: #1d6755;
   font-weight: 500;
   font-size: 0.9rem;
   padding: 0.45rem 0.55rem;
@@ -342,6 +342,7 @@ body img {
   border-bottom: 3px solid #99e2d0;
 }
 .menu__card {
+  cursor: pointer;
   display: flex;
   max-width: 100%;
   background-color: #fff;
