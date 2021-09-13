@@ -70,15 +70,15 @@
         "desserts";
     &__starters {
         grid-area: starters;
-        animation: appearing-menu 0.5s both 0.1s;
+        /*animation: appearing-menu 0.5s both 0.1s;*/
     }
     &__dishes {
         grid-area: dishes;
-        animation: appearing-menu 0.5s both 0.3s;
+        /*animation: appearing-menu 0.5s both 0.3s;*/
     }
     &__desserts {
         grid-area: desserts;
-        animation: appearing-menu 0.5s both 0.5s;
+        /*animation: appearing-menu 0.5s both 0.5s;*/
     }
     &__title {
         max-width: 2.7rem;
@@ -88,6 +88,7 @@
         font-size: 1.08rem;
         text-transform: uppercase;
         border-bottom: 3px solid $color-tertiary;
+        animation: appearing-menu 0.5s both 0.3s;
     }
     &__card {
         cursor: pointer;
@@ -99,6 +100,7 @@
         border-radius: 15px;
         @include box-shadow(10px, 0);
         overflow: hidden;
+        @include appear-menu;
         &:hover > .menu__icon {
             margin-right: -0.8rem;
         }
@@ -154,6 +156,7 @@
 /* CHECKOUT BUTTON */
 .checkout {
     @include center;
+    margin-bottom: 3rem;
     &__btn {
         @include btn-appearance($color-secondary, $color-primary, 2.5rem);
         transition: opacity 0.2s ease-in-out, box-shadow 0.4s ease-in-out;

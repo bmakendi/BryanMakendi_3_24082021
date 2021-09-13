@@ -31,33 +31,6 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
-body img {
-  max-width: 100%;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 3.96rem;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-.header__logo {
-  margin-bottom: -0.5rem;
-}
-.header__anim {
-  z-index: 2;
-  position: relative;
-  animation: loading-title 1.7s 0.3s both;
-}
-.header__return {
-  font-size: 1.3rem;
-  position: absolute;
-  left: 2rem;
-  margin-bottom: -0.5rem;
-}
-
 @keyframes appearing-menu {
   from {
     transform: translateY(2rem);
@@ -114,6 +87,33 @@ body img {
     opacity: 1;
   }
 }
+body img {
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3.96rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.header__logo {
+  margin-bottom: -0.5rem;
+}
+.header__anim {
+  z-index: 2;
+  position: relative;
+  animation: loading-title 1.7s 0.3s both;
+}
+.header__return {
+  font-size: 1.3rem;
+  position: absolute;
+  left: 2rem;
+  margin-bottom: -0.5rem;
+}
+
 /* LOADING SPINNER */
 .loading {
   position: fixed;
@@ -408,15 +408,15 @@ body img {
 }
 .menu__starters {
   grid-area: starters;
-  animation: appearing-menu 0.5s both 0.1s;
+  /*animation: appearing-menu 0.5s both 0.1s;*/
 }
 .menu__dishes {
   grid-area: dishes;
-  animation: appearing-menu 0.5s both 0.3s;
+  /*animation: appearing-menu 0.5s both 0.3s;*/
 }
 .menu__desserts {
   grid-area: desserts;
-  animation: appearing-menu 0.5s both 0.5s;
+  /*animation: appearing-menu 0.5s both 0.5s;*/
 }
 .menu__title {
   max-width: 2.7rem;
@@ -426,6 +426,7 @@ body img {
   font-size: 1.08rem;
   text-transform: uppercase;
   border-bottom: 3px solid #99e2d0;
+  animation: appearing-menu 0.5s both 0.3s;
 }
 .menu__card {
   cursor: pointer;
@@ -437,6 +438,36 @@ body img {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+}
+.menu__card--1 {
+  animation: appearing-menu 0.5s both 0.1s;
+}
+.menu__card--2 {
+  animation: appearing-menu 0.5s both 0.2s;
+}
+.menu__card--3 {
+  animation: appearing-menu 0.5s both 0.3s;
+}
+.menu__card--4 {
+  animation: appearing-menu 0.5s both 0.4s;
+}
+.menu__card--5 {
+  animation: appearing-menu 0.5s both 0.5s;
+}
+.menu__card--6 {
+  animation: appearing-menu 0.5s both 0.6s;
+}
+.menu__card--7 {
+  animation: appearing-menu 0.5s both 0.7s;
+}
+.menu__card--8 {
+  animation: appearing-menu 0.5s both 0.8s;
+}
+.menu__card--9 {
+  animation: appearing-menu 0.5s both 0.9s;
+}
+.menu__card--10 {
+  animation: appearing-menu 0.5s both 1s;
 }
 .menu__card:hover > .menu__icon {
   margin-right: -0.8rem;
@@ -496,6 +527,7 @@ body img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
 }
 .checkout__btn {
   color: #fff;
