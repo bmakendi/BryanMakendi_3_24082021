@@ -45,3 +45,20 @@
         }
     }
 }
+
+@mixin big-screen-margin($value: 1400px) {
+    max-width: $value;
+    margin: auto;
+}
+
+@mixin tablet-layout {
+    @media all and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin laptop-layout {
+    @media all and (min-width: map-get($breakpoints, laptop)) {
+        @content;
+    }
+}

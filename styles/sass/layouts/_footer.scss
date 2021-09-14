@@ -6,6 +6,12 @@
     color: #fff;
     min-height: 10rem;
     padding: 1.5rem;
+    @include tablet-layout {
+        padding: 2rem 4.5rem 1.2rem;
+    }
+    &__content {
+        @include big-screen-margin;
+    }
     a {
         color: #fff;
 
@@ -14,10 +20,22 @@
         margin-bottom: 1rem;
         font-weight: 500;
     }
+    &__links {
+        @include tablet-layout {
+            display: flex;
+            justify-content: space-between;
+        }
+        @include laptop-layout {
+            justify-content: flex-start;
+        }
+    }
     &__option {
         margin-bottom: 0.5rem;
         &--bold {
             font-weight: bold;
+        }
+        @include laptop-layout {
+            margin-right: 2rem;
         }
     }
     &__icon {

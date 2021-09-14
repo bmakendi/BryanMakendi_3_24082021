@@ -5,3 +5,8 @@ $form-bg-color: #eaeaea;
 $footer-bg-color: #353535;
 $light-grey: #f6f6f6;
 $h2-font-size: 1.65rem;
+
+$breakpoints: (
+    tablet: 760px,
+    laptop: 1020px
+);
