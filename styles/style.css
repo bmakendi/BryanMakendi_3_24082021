@@ -389,9 +389,24 @@ body img {
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
 }
+@media all and (min-width: 760px) {
+  .main-restau {
+    padding: 2rem 4.5rem;
+    margin-top: -10rem;
+  }
+}
+.main-restau__content {
+  max-width: 1400px;
+  margin: auto;
+}
 
 .main-note-enchantee {
   margin-top: -15rem;
+}
+@media all and (min-width: 760px) {
+  .main-note-enchantee {
+    margin-top: -12rem;
+  }
 }
 
 /* HEADING */
@@ -436,6 +451,12 @@ body img {
   position: relative;
   display: grid;
   grid-template-areas: "starters" "dishes" "desserts";
+}
+@media all and (min-width: 1020px) {
+  .menu {
+    grid-template-areas: "starters dishes desserts";
+    column-gap: 2rem;
+  }
 }
 .menu__starters {
   grid-area: starters;

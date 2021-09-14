@@ -20,10 +20,20 @@
     margin-top: -3.8rem;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
+    @include tablet-layout {
+        padding: 2rem 4.5rem;
+        margin-top: -10rem;
+    }
+    &__content {
+        @include big-screen-margin;
+    }
 }
 
 .main-note-enchantee {
     margin-top: -15rem;
+    @include tablet-layout {
+        margin-top: -12rem;
+    }
 }
 
 /* HEADING */
@@ -67,6 +77,11 @@
         "starters"
         "dishes"
         "desserts";
+    @include laptop-layout {
+        grid-template-areas: 
+            "starters dishes desserts";
+        column-gap: 2rem;
+    }
     &__starters {
         grid-area: starters;
     }
