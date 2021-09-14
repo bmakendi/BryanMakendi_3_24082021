@@ -38,10 +38,10 @@
     opacity: 1;
 }
 
-@mixin appear-menu{
+@mixin appear-menu {
     @for $i from 1 to 11 {
-        &--#{$i}{
-            animation: appearing-menu 0.5s both #{(0.1*$i)}s;
+        &--#{$i} {
+            animation: appearing-menu 0.5s both #{(0.1 * $i)}s;
         }
     }
 }

@@ -6,7 +6,7 @@
 .loading {
     position: fixed;
     right: 0;
-    left:0;
+    left: 0;
     top: 0;
     bottom: 0;
     @include center;
@@ -74,22 +74,24 @@
 /* HOW TO USE */
 .how-to {
     padding: 2.5rem 1.5rem;
-    display: grid;
-    grid-template-areas:
-        "title"
-        "restau"
-        "menu"
-        "eat";
     @include tablet-layout {
         padding: 2.5rem 4.5rem;
     }
-    @include laptop-layout {
-        grid-template-areas: 
-            "title title title"
-            "restau menu eat";
-        column-gap: 1rem;
+    &__content {
+        @include big-screen-margin;
+        display: grid;
+        grid-template-areas:
+            "title"
+            "restau"
+            "menu"
+            "eat";
+        @include laptop-layout {
+            grid-template-areas:
+                "title title title"
+                "restau menu eat";
+            column-gap: 1rem;
+        }
     }
-    @include big-screen-margin;
     &__title {
         grid-area: title;
         margin-bottom: 1.5rem;
@@ -97,15 +99,12 @@
     }
     opt1 {
         grid-area: restau;
-        
     }
     opt2 {
         grid-area: menu;
-       
     }
     opt3 {
         grid-area: eat;
-       
     }
     &__option {
         position: relative;
@@ -120,7 +119,7 @@
         color: #7e7e7e;
         transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
         &:hover {
-            background-color: #F5EDFF;
+            background-color: #f5edff;
             color: $color-primary;
         }
     }
@@ -156,13 +155,13 @@
     &__content {
         display: grid;
         grid-template-areas:
-        "title"
-        "restau1"
-        "restau2"
-        "restau3"
-        "restau4";
+            "title"
+            "restau1"
+            "restau2"
+            "restau3"
+            "restau4";
         @include laptop-layout {
-            grid-template-areas: 
+            grid-template-areas:
                 "title title"
                 "restau1 restau2"
                 "restau3 restau4";
@@ -217,7 +216,7 @@
         margin-left: 1rem;
     }
     &__heart {
-        &:hover > *{
+        &:hover > * {
             @include heart-anim();
         }
         & > * {
@@ -228,7 +227,7 @@
             transition: opacity 0.4s ease-in-out;
         }
         &--full {
-            color:$light-grey;
+            color: $light-grey;
             opacity: 0;
         }
     }

@@ -42,7 +42,7 @@
     &__heart {
         font-size: 1.7rem;
         margin-left: 1rem;
-        &:hover > *{
+        &:hover > * {
             @include heart-anim();
         }
         & > * {
@@ -52,11 +52,10 @@
             transition: opacity 0.4s ease-in-out;
         }
         &--full {
-            color:$light-grey;
+            color: $light-grey;
             opacity: 0;
         }
     }
-    
 }
 
 /* MENU */
@@ -64,21 +63,18 @@
     margin-bottom: 3rem;
     position: relative;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "starters"
         "dishes"
         "desserts";
     &__starters {
         grid-area: starters;
-        /*animation: appearing-menu 0.5s both 0.1s;*/
     }
     &__dishes {
         grid-area: dishes;
-        /*animation: appearing-menu 0.5s both 0.3s;*/
     }
     &__desserts {
         grid-area: desserts;
-        /*animation: appearing-menu 0.5s both 0.5s;*/
     }
     &__title {
         max-width: 2.7rem;
@@ -130,7 +126,6 @@
         width: 1.4rem;
         height: 1.4rem;
         @include center;
-        
     }
     &__sub-title {
         font-weight: 500;
