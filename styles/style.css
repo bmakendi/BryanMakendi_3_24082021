@@ -290,7 +290,7 @@ body img {
 @media all and (min-width: 1020px) {
   .restau__content {
     grid-template-areas: "title title" "restau1 restau2" "restau3 restau4";
-    column-gap: 1rem;
+    column-gap: 1.5rem;
   }
 }
 .restau__title {
